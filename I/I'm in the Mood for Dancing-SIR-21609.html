@@ -1,482 +1,358 @@
-<html>
-
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 12 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Cambria;
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";
-	color:windowtext;}
-h1
-	{mso-style-link:"Heading 1 Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";
-	color:windowtext;
-	font-weight:bold;}
-h2
-	{mso-style-link:"Heading 2 Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	font-size:10.0pt;
-	font-family:"Times New Roman","serif";
-	color:windowtext;
-	font-weight:normal;
-	font-style:italic;}
-h3
-	{mso-style-link:"Heading 3 Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";
-	color:windowtext;
-	font-weight:normal;
-	font-style:italic;}
-h4
-	{mso-style-link:"Heading 4 Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	font-size:16.0pt;
-	font-family:"Times New Roman","serif";
-	color:windowtext;
-	font-weight:normal;}
-h5
-	{mso-style-link:"Heading 5 Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	font-size:18.0pt;
-	font-family:"Times New Roman","serif";
-	color:windowtext;
-	font-weight:normal;}
-h6
-	{mso-style-link:"Heading 6 Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	background:#FF99CC;
-	font-size:16.0pt;
-	font-family:"Arial","sans-serif";
-	color:black;
-	font-weight:normal;}
-p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
-	{mso-style-link:"Body Text Char";
-	margin-top:0cm;
-	margin-right:-10.4pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	background:#FCC9C3;
-	font-size:18.0pt;
-	font-family:"Arial","sans-serif";
-	color:windowtext;}
-p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
-	{mso-style-link:"Body Text 2 Char";
-	margin-top:0cm;
-	margin-right:-19.4pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	background:#FCC9C3;
-	font-size:18.0pt;
-	font-family:"Arial","sans-serif";
-	color:windowtext;}
-p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
-	{mso-style-link:"Body Text Indent 2 Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:-9.0pt;
-	margin-bottom:.0001pt;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";
-	color:windowtext;}
-p
-	{margin-right:0cm;
-	margin-left:0cm;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";
-	color:black;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:36.0pt;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";
-	color:windowtext;}
-span.Heading1Char
-	{mso-style-name:"Heading 1 Char";
-	mso-style-link:"Heading 1";
-	font-family:"Cambria","serif";
-	color:#365F91;
-	font-weight:bold;}
-span.Heading2Char
-	{mso-style-name:"Heading 2 Char";
-	mso-style-link:"Heading 2";
-	font-family:"Cambria","serif";
-	color:#4F81BD;
-	font-weight:bold;}
-span.Heading3Char
-	{mso-style-name:"Heading 3 Char";
-	mso-style-link:"Heading 3";
-	font-family:"Cambria","serif";
-	color:#4F81BD;
-	font-weight:bold;}
-span.Heading4Char
-	{mso-style-name:"Heading 4 Char";
-	mso-style-link:"Heading 4";
-	font-family:"Cambria","serif";
-	color:#4F81BD;
-	font-weight:bold;
-	font-style:italic;}
-span.Heading5Char
-	{mso-style-name:"Heading 5 Char";
-	mso-style-link:"Heading 5";
-	font-family:"Cambria","serif";
-	color:#243F60;}
-span.Heading6Char
-	{mso-style-name:"Heading 6 Char";
-	mso-style-link:"Heading 6";
-	font-family:"Cambria","serif";
-	color:#243F60;
-	font-style:italic;}
-span.BodyTextChar
-	{mso-style-name:"Body Text Char";
-	mso-style-link:"Body Text";}
-span.BodyText2Char
-	{mso-style-name:"Body Text 2 Char";
-	mso-style-link:"Body Text 2";}
-span.BodyTextIndent2Char
-	{mso-style-name:"Body Text Indent 2 Char";
-	mso-style-link:"Body Text Indent 2";}
-p.msolistparagraphcxspfirst, li.msolistparagraphcxspfirst, div.msolistparagraphcxspfirst
-	{mso-style-name:msolistparagraphcxspfirst;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";
-	color:windowtext;}
-p.msolistparagraphcxspmiddle, li.msolistparagraphcxspmiddle, div.msolistparagraphcxspmiddle
-	{mso-style-name:msolistparagraphcxspmiddle;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";
-	color:windowtext;}
-p.msolistparagraphcxsplast, li.msolistparagraphcxsplast, div.msolistparagraphcxsplast
-	{mso-style-name:msolistparagraphcxsplast;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:36.0pt;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";
-	color:windowtext;}
-p.verse, li.verse, div.verse
-	{mso-style-name:verse;
-	margin-right:0cm;
-	margin-left:0cm;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";
-	color:windowtext;}
-p.Lyrics, li.Lyrics, div.Lyrics
-	{mso-style-name:Lyrics;
-	margin:0cm;
-	margin-bottom:.0001pt;
-	text-autospace:none;
-	font-size:14.0pt;
-	font-family:"Arial","sans-serif";
-	color:blue;
-	font-weight:bold;}
-p.msochpdefault, li.msochpdefault, div.msochpdefault
-	{mso-style-name:msochpdefault;
-	margin-right:0cm;
-	margin-left:0cm;
-	font-size:10.0pt;
-	font-family:"Times New Roman","serif";
-	color:black;}
-span.lineline-s
-	{mso-style-name:"line line-s";}
-@page Section1
-	{size:595.3pt 841.9pt;
-	margin:1.0cm 1.0cm 1.0cm 1.0cm;}
-div.Section1
-	{page:Section1;}
--->
-</style>
-
-</head>
-
-<body lang=EN-GB>
-
-<div class=Section1>
-
-<h2><b><span style='font-size:18.0pt;font-family:"Arial","sans-serif";
-font-style:normal'>I'm In The Mood For Dancing</span>&nbsp;&nbsp; </b><span
-style='font-family:"Arial","sans-serif"'>(Nolan Sisters)</span><span
-style='font-family:"Arial","sans-serif";font-style:normal'> - </span><b><span
-style='font-size:12.0pt;font-family:"Arial","sans-serif";font-style:normal'>STING
-21609</span></b><span style='font-family:"Arial","sans-serif";font-style:normal'>&nbsp;&nbsp;
-(Cherish Bristow)</span></h2>
-
-<h2><span style='font-family:"Arial","sans-serif"'>With Vocal Harmonies
-provided by:</span><span style='font-family:"Arial","sans-serif";font-style:
-normal'> The Paulettes (Tina, Serina, Marie &amp; Cherish)</span></h2>
-
-<h2><span style='font-family:"Arial","sans-serif";font-style:normal'>&nbsp;</span></h2>
-
-<h2><b><span style='font-family:"Arial","sans-serif";font-style:normal'>&nbsp;(</span></b><b><span
-style='font-family:"Arial","sans-serif"'>Opener</span></b><b><span
-style='font-family:"Arial","sans-serif";font-style:normal'>):</span></b><span
-style='font-family:"Arial","sans-serif";font-style:normal'> <span
-style='text-transform:uppercase'>SIDES FACE GRAND SQUARE:</span></span></h2>
-
-<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;line-height:
-normal'><span lang=EN-US style='font-size:18.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>I'm in the mood for dancin' - romancin'<br>
-Oh I'm givin' it all tonight<br>
-I'm in the mood for chancin'</span><br>
-<span lang=EN-US style='font-size:18.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>I feel like dancin'</span><span lang=EN-US
-style='font-size:10.0pt;font-family:"Arial","sans-serif"'> - </span><span
-style='font-size:10.0pt;font-family:"Arial","sans-serif"'>ALLEMANDE LEFT and -
-WEAVE THE RING</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>Dancin' - - - I'm in the mood babe<br>
-</span><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>SWING
-your Girl - PROMENADE</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>Oh - oh - I'm dancin' - - - I'm in the groove babe<br>
-So get on up and let your body sway</span></p>
-
-<h4><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></b></h4>
-
-<h4><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></b></h4>
-
-<h4><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;(<i>Figure</i>):</span></b><span
-style='font-size:10.0pt;font-family:"Arial","sans-serif"'> HEADS you PROMENADE
-- go HALFWAY</span></h4>
-
-<h4><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>And then
-you walk in - STAR THRU and PASS THRU - tonight</span></h4>
-
-<h4><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>SWING THRU
-- the BOYS you RUN RIGHT - - - HALF TAG - - - SCOOTBACK and go alright</span></h4>
-
-<h4><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>BOYS you
-RUN RIGHT - SLIDE THRU and SWING - - - your Corner Girl - PROMENADE</span></h4>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>Oh - oh - I'm dancin' - - - I'm in the groove babe<br>
-So get on up and let your body sway</span></p>
-
-<h2><b><span style='font-family:"Arial","sans-serif";font-style:normal'>&nbsp;</span></b></h2>
-
-<h2><b><span style='font-family:"Arial","sans-serif";font-style:normal'>&nbsp;</span></b></h2>
-
-<h2><b><span style='font-family:"Arial","sans-serif";font-style:normal'>&nbsp;(</span></b><b><span
-style='font-family:"Arial","sans-serif"'>Middle Break</span></b><b><span
-style='font-family:"Arial","sans-serif";font-style:normal'>):</span></b><span
-style='font-family:"Arial","sans-serif";font-style:normal'> <span
-style='text-transform:uppercase'>SIDES FACE GRAND SQUARE</span></span></h2>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:#F8F8E8'><span
-lang=EN-US style='font-size:18.0pt;font-family:"Arial","sans-serif";color:windowtext;
-background:#FCC9C3'>I'm in the mood for dancin'</span><span lang=EN-US
-style='font-size:18.0pt;font-family:"Arial","sans-serif";background:#FCC9C3'> -
-romancin'</span></p>
-
-<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;line-height:
-normal'><span lang=EN-US style='font-size:18.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>You know I shan't ever stop tonight<br>
-I'm in the mood for chancin'<br>
-I feel like dancin'</span><span lang=EN-US style='font-size:10.0pt;font-family:
-"Arial","sans-serif"'> - </span><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>ALLEMANDE
-LEFT and you WEAVE</span></p>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:#F8F8E8'><span
-lang=EN-US style='font-size:18.0pt;font-family:"Arial","sans-serif";color:windowtext;
-background:#FCC9C3'>Take me again - and heaven who knows<br>
-</span><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>SWING
-your Girl and PROMENADE</span><span lang=EN-US style='font-size:18.0pt;
-font-family:"Arial","sans-serif";color:windowtext;background:#FCC9C3'><br>
-So dance - yeah let's dance - come on and dance</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>Ooh-ooh-ooh - ooh-ooh-ooh-ooh-ooh-ooh</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>Ooh-ooh-ooh - ooh-ooh-ooh-ooh-ooh-ooh</span></p>
-
-<p class=MsoNormal><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></b></p>
-
-<p class=MsoNormal><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></b></p>
-
-<p class=MsoNormal><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;(<i>Closer</i>&nbsp;and
-<i>Tag</i>):</span></b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>
-<span style='text-transform:uppercase'>SIDES FACE GRAND SQUARE:</span></span></p>
-
-<p style='margin-top:0cm;margin-right:-11.1pt;margin-bottom:0cm;margin-left:
-0cm;margin-bottom:.0001pt;background:#F8F8E8'><span lang=EN-US
-style='font-size:18.0pt;font-family:"Arial","sans-serif";color:windowtext;
-background:#FCC9C3'>I'm in the mood for dancin'</span><span lang=EN-US
-style='font-size:18.0pt;font-family:"Arial","sans-serif";background:#FCC9C3'> -
-romancin'</span><span lang=EN-US style='font-size:18.0pt;font-family:"Arial","sans-serif";
-color:windowtext;background:#FCC9C3'><br>
-You know I shan't ever stop tonight</span></p>
-
-<p style='margin-top:0cm;margin-right:-11.1pt;margin-bottom:0cm;margin-left:
-0cm;margin-bottom:.0001pt;background:#F8F8E8'><span lang=EN-US
-style='font-size:18.0pt;font-family:"Arial","sans-serif";color:windowtext;
-background:#FCC9C3'>I'm in the mood - I'm in the mood<br>
-I'm in the mood</span><span lang=EN-US style='font-size:10.0pt;font-family:
-"Arial","sans-serif"'> </span><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>ALLEMANDE
-LEFT and WEAVE THE RING</span></p>
-
-<p style='margin-top:0cm;margin-right:-11.1pt;margin-bottom:0cm;margin-left:
-0cm;margin-bottom:.0001pt;background:#F8F8E8'><span lang=EN-US
-style='font-size:18.0pt;font-family:"Arial","sans-serif";color:windowtext;
-background:#FCC9C3'>Yeah let's dance - come on and dance</span></p>
-
-<p style='margin-top:0cm;margin-right:-11.1pt;margin-bottom:0cm;margin-left:
-0cm;margin-bottom:.0001pt;background:#F8F8E8'><span style='font-size:10.0pt;
-font-family:"Arial","sans-serif"'>SWING your Girl and PROMENADE - </span><span
-lang=EN-US style='font-size:18.0pt;font-family:"Arial","sans-serif";color:windowtext;
-background:#FCC9C3'>I'm in the mood - so baby dance<br>
-Yeah let's dance - come on and</span><b><span lang=EN-US style='font-size:10.0pt;
-font-family:"Arial","sans-serif"'> </span></b><span style='font-size:10.0pt;
-font-family:"Arial","sans-serif"'>- SWING your Girl</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>I'm in the mood - so take a chance</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>Yeah let's dance - come on and dance<br>
-Ooh-ooh-ooh - ooh-ooh-ooh-ooh-ooh - let's dance!</span></p>
-
-<p class=MsoNormal style='margin-right:-28.45pt'><span style='font-size:10.0pt;
-font-family:"Arial","sans-serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-right:-28.45pt'><span style='font-size:10.0pt;
-font-family:"Arial","sans-serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-right:-28.45pt'><b><i><span style='font-size:
-10.0pt;font-family:"Arial","sans-serif"'>ORIGINAL LYRICS:</span></i></b></p>
-
-<p class=verse style='margin:0cm;margin-bottom:.0001pt'><b>&nbsp;</b></p>
-
-<p style='margin-top:0cm;margin-right:-10.95pt;margin-bottom:12.0pt;margin-left:
-0cm;background:#F8F8E8'><span style='background:white'>I'm in the mood for
-dancin', romancin'</span><br>
-<span style='background:white'>Ooh I'm givin' it all tonight</span><br>
-<span style='background:white'>I'm in the mood for chancin'</span><br>
-<span style='background:white'>I feel like dancin' Ooh so come on and hold me
-tight</span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
-0cm;background:#F8F8E8'><span style='background:white'>Dancin', I'm in the
-mood, babe</span><br>
-<span style='background:white'>So let the music play Ooh</span><br>
-<span style='background:white'>I'm dancin', I'm in the groove, babe</span><br>
-<span style='background:white'>So get on up and let your body sway</span></p>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:#F8F8E8'><span
-style='background:white'>I'm in the mood for dancin',</span></p>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:#F8F8E8'><span
-style='background:white'>Romancin' - you know I shan't ever stop tonight</span><br>
-<span style='background:white'>I'm in the mood for chancin'</span><br>
-<span style='background:white'>I feel like dancin' Ooh from head to my toes</span></p>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:#F8F8E8'><span
-style='font-size:8.0pt'>&nbsp;</span></p>
-
-<p style='margin:0cm;margin-bottom:.0001pt;background:#F8F8E8'><span
-style='background:white'>Take me again And heaven who knows</span><br>
-<span style='background:white'>Just where it will end So dance,</span><br>
-<span style='background:white'>Yeah let's dance, come on and dance</span></p>
-
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
-0cm;background:#F8F8E8'><span style='background:white'>Oooh-ah Oooh-ah - Ooh
-ooh-ooh-ooh</span><br>
-<span style='background:white'>Dance, yeah let's dance, come on and dance</span></p>
-
-<p style='margin-top:0cm;margin-right:-11.1pt;margin-bottom:12.0pt;margin-left:
-0cm;background:#F8F8E8'><span style='background:white'>Dancin', just feel the
-beat, babe</span><br>
-<span style='background:white'>That's all you've gotta do</span><br>
-<span style='background:white'>I can't stop dancin' So move your feet, babe</span><br>
-<span style='background:white'>'cause honey when I get up close to you</span></p>
-
-<p style='margin-top:0cm;margin-right:-11.1pt;margin-bottom:0cm;margin-left:
-0cm;margin-bottom:.0001pt;background:#F8F8E8'><span style='background:white'>I'm
-in the mood for dancin'</span><br>
-<span style='background:white'>Romancin' - you know I shan't ever stop tonight</span></p>
-
-<p style='margin-top:0cm;margin-right:-11.1pt;margin-bottom:0cm;margin-left:
-0cm;margin-bottom:.0001pt;background:#F8F8E8'><span style='background:white'>I'm
-in the mood, I'm in the mood</span><br>
-<span style='background:white'>I'm in the mood to dance</span></p>
-
-<p style='margin-top:0cm;margin-right:-11.1pt;margin-bottom:0cm;margin-left:
-0cm;margin-bottom:.0001pt;background:#F8F8E8'><span style='font-size:8.0pt'>&nbsp;</span></p>
-
-<p style='margin-top:0cm;margin-right:-11.1pt;margin-bottom:0cm;margin-left:
-0cm;margin-bottom:.0001pt;background:#F8F8E8'><span style='background:white'>Yeah
-let's dance, come on and dance</span></p>
-
-<p style='margin-top:0cm;margin-right:-11.1pt;margin-bottom:0cm;margin-left:
-0cm;margin-bottom:.0001pt;background:#F8F8E8'><span style='background:white'>I'm
-in the mood so baby dance</span><br>
-<span style='background:white'>Yeah let's dance, come on and dance</span><br>
-<span style='background:white'>I'm in the mood to take a chance</span></p>
-
-<p style='margin-top:0cm;margin-right:-11.1pt;margin-bottom:0cm;margin-left:
-0cm;margin-bottom:.0001pt;background:#F8F8E8'><span style='font-size:8.0pt'>&nbsp;</span></p>
-
-<p style='margin-top:0cm;margin-right:-11.1pt;margin-bottom:0cm;margin-left:
-0cm;margin-bottom:.0001pt;background:#F8F8E8'><span style='background:white'>Yeah
-let's dance, come on and dance</span><br>
-<span style='background:white'>So move your feet, yeah baby dance</span><br>
-<span style='background:white'>Yeah let's dance, come on and dance<br>
-Can't you hear the music, baby dance<br>
-Yeah let's dance, come on and dance!!</span></p>
-
-</div>
-
-</body>
-
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+  <title>
+   Music -- I'mInTheMoodForDancing-Sting-21609
+  </title>
+  <base href="https://www.ceder.net/" target="_top">
+  <script src="https://www.ceder.net/js/ceder.js?v=0">
+  </script>
+  <link href="https://www.ceder.net/favicon/recorddb.ico" rel="icon" type="image/x-icon">
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="http://www.unspam.com/noemailcollection" name="no-email-collection">
+  <meta content="none" name="robots">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <style>
+   @media (max-width:400px) {.vbig {display:none;}}@media (min-width:400px) {.vsmall {display:none;}}@media (max-width:680px) {.vtbig {display:none;}}@media (min-width:680px) {.vtsmall {display:none;}}
+  </style>
+  <style>
+   .footnote {font-size:8pt;}
+.title {font-size:18pt; font-weight:bold;}
+.label {font-size:10pt; color:purple;}
+.artist {font-size:10pt; color:green;}
+.hdr {font-size:12pt; color:brown; font-weight:bold; margin-left:25px;}
+.text {font-size:12pt; line-height:140%;}
+.lyrics {font-size:14pt; background-color:#FCC9C3;}
+.call {font-size:14pt; font-weight: bold;}
+.blue {color:blue;}
+font {font-family:Tahoma,Arial,Helvetica,sans-serif;}
+body, p, font {font-family:Arial,Helvetica,Verdana,sans-serif; font-size:10pt;}
+dd {margin-left:50px;}
+.t010 {border:0px none; border-spacing:0px;}
+table.t010 td, th {padding:1px; border:0px solid red;}
+table.t010 tr {border:0px solid red;}
+  </style>
+ </head>
+ <body style="color:#000000; background-color:#FFFFFF;">
+  <table class="t010">
+   <tr>
+    <td>
+     <div class="title">
+      I'm In The Mood For Dancing
+     </div>
+     <div>
+      The Nolan Sisters 1979
+     </div>
+    </td>
+    <td>
+     &nbsp;&nbsp;
+     <span class="label">
+      (Sting 21609)
+     </span>
+     &nbsp;&nbsp;
+     <span class="artist">
+      <span class="nobr">
+       Cherish Bristow
+      </span>
+     </span>
+    </td>
+   </tr>
+  </table>
+  <hr>
+  <dl>
+   <dt>
+    <span class="hdr">
+     OPENER&nbsp;&nbsp;&nbsp;
+     <span style="color:black; font-size:10pt; font-weight:normal;">
+      Mainstream
+     </span>
+    </span>
+   </dt>
+   <dd>
+    <br>
+    <span class="text">
+     <span class="call">
+      Sides
+     </span>
+     <span class="call">
+      face grand square
+     </span>
+     <br>
+     <span class="lyrics">
+      I'm in the mood for dancin' - romancin'
+      <br>
+      Oh I'm givin' it all tonight
+      <br>
+      I'm in the mood for chancin'
+      <br>
+      I feel like dancin'
+     </span>
+     ,
+     <span class="call">
+      Allemande left
+     </span>
+     and
+     <span class="call">
+      weave the ring
+     </span>
+     <br>
+     <span class="lyrics">
+      Dancin' - - - I'm in the mood babe
+     </span>
+     <br>
+     <span class="call">
+      Swing
+     </span>
+     your girl,
+     <span class="call">
+      promenade
+     </span>
+     <br>
+     <span class="lyrics">
+      Oh - oh - I'm dancin' - - - I'm in the groove babe
+      <br>
+      So get on up and let your body sway
+     </span>
+    </span>
+    <br>
+    <br>
+   </dd>
+   <dt>
+    <span class="hdr">
+     FIGURE&nbsp;&nbsp;&nbsp;
+     <span style="color:black; font-size:10pt; font-weight:normal;">
+      MS - SSD Week 12, corner progression
+     </span>
+    </span>
+   </dt>
+   <dd>
+    <br>
+    <span class="text">
+     <span class="call">
+      Heads (sides)
+     </span>
+     you
+     <span class="call">
+      promenade
+     </span>
+     go
+     <span class="call">
+      halfway
+     </span>
+     <br>
+     And then you
+     <span class="call">
+      walk in
+     </span>
+     <span class="call">
+      star thru
+     </span>
+     and
+     <span class="call">
+      pass thru
+     </span>
+     tonight
+     <br>
+     <span class="call">
+      Swing thru
+     </span>
+     , the
+     <span class="call">
+      boys you run right
+     </span>
+     <br>
+     <span class="call">
+      Half tag
+     </span>
+     ,
+     <span class="call">
+      scoot back
+     </span>
+     and go alright
+     <br>
+     <span class="call">
+      Boys you run right
+     </span>
+     ,
+     <span class="call">
+      slide thru
+     </span>
+     <br>
+     And
+     <span class="call">
+      swing
+     </span>
+     your corner girl,
+     <span class="call">
+      promenade
+     </span>
+     <br>
+     <span class="lyrics">
+      Oh - oh - I'm dancin' - - - I'm in the groove babe
+      <br>
+      So get on up and let your body sway
+     </span>
+    </span>
+    <br>
+    <br>
+   </dd>
+   <dt>
+    <span class="hdr">
+     MIDDLE BREAK&nbsp;&nbsp;&nbsp;
+     <span style="color:black; font-size:10pt; font-weight:normal;">
+      Mainstream
+     </span>
+    </span>
+   </dt>
+   <dd>
+    <br>
+    <span class="text">
+     <span class="call">
+      Sides
+     </span>
+     <span class="call">
+      face grand square
+     </span>
+     <br>
+     <span class="lyrics">
+      I'm in the mood for dancin' - romancin'
+      <br>
+      You know I shan't ever stop tonight
+      <br>
+      I'm in the mood for chancin'
+      <br>
+      I feel like dancin'
+     </span>
+     ,
+     <span class="call">
+      Allemande left
+     </span>
+     and you
+     <span class="call">
+      weave
+     </span>
+     <br>
+     <span class="lyrics">
+      Take me again - and heaven who knows
+     </span>
+     <br>
+     <span class="call">
+      Swing
+     </span>
+     your girl and
+     <span class="call">
+      promenade
+     </span>
+     <br>
+     <span class="lyrics">
+      So dance - yeah let's dance - come on and dance
+      <br>
+      Ooh-ooh-ooh - ooh-ooh-ooh-ooh-ooh-ooh
+      <br>
+      Ooh-ooh-ooh - ooh-ooh-ooh-ooh-ooh-ooh
+     </span>
+    </span>
+    <br>
+    <br>
+   </dd>
+   <dt>
+    <span class="hdr">
+     CLOSER&nbsp;&nbsp;&nbsp;
+     <span style="color:black; font-size:10pt; font-weight:normal;">
+      Mainstream
+     </span>
+    </span>
+   </dt>
+   <dd>
+    <br>
+    <span class="text">
+     <span class="call">
+      Sides
+     </span>
+     <span class="call">
+      face grand square
+     </span>
+     <br>
+     <span class="lyrics">
+      I'm in the mood for dancin' - romancin'
+      <br>
+      You know I shan't ever stop tonight
+      <br>
+      I'm in the mood - I'm in the mood
+      <br>
+      I'm in the mood
+     </span>
+     ,
+     <span class="call">
+      Allemande left
+     </span>
+     and
+     <span class="call">
+      weave the ring
+     </span>
+     <br>
+     <span class="lyrics">
+      Yeah let's dance - come on and dance
+     </span>
+     <br>
+     <span class="call">
+      Swing
+     </span>
+     your girl and
+     <span class="call">
+      promenade
+     </span>
+     <br>
+     <span class="lyrics">
+      I'm in the mood - so baby dance
+      <br>
+      Yeah let's dance - come on and...
+     </span>
+     ,
+     <span class="call">
+      swing
+     </span>
+     your girl
+     <br>
+     <span class="lyrics">
+      I'm in the mood - so take a chance
+      <br>
+      Yeah let's dance - come on and dance
+      <br>
+      Ooh-ooh-ooh - ooh-ooh-ooh-ooh-ooh - let's dance!
+     </span>
+    </span>
+   </dd>
+  </dl>
+  <hr>
+  <span class="footnote">
+   <span class="blue">
+    Music
+   </span>
+   --
+   <a href="https://www.ceder.net/recorddb/viewsingle.php?RecordId=17332">
+    https://www.ceder.net/recorddb/viewsingle.php?RecordId=17332
+   </a>
+  </span>
+  <br>
+  <span class="footnote">
+   <span class="blue">
+    Lyrics
+   </span>
+   --
+   <a href="https://www.ceder.net/recorddb/lyrics.php?LyricsId=4157">
+    https://www.ceder.net/recorddb/lyrics.php?LyricsId=4157
+   </a>
+  </span>
+  <br>
+  <span class="footnote">
+   <span class="blue">
+    This file
+   </span>
+   --
+   <a href="https://www.ceder.net/recorddb/cuesheet.php?RecordId=17332">
+    https://www.ceder.net/recorddb/cuesheet.php?RecordId=17332
+   </a>
+  </span>
+ </body>
 </html>

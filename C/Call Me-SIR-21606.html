@@ -1,464 +1,408 @@
-<html>
-
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 12 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Cambria;
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";}
-h1
-	{mso-style-link:"Heading 1 Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";}
-h2
-	{mso-style-link:"Heading 2 Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	font-size:10.0pt;
-	font-family:"Times New Roman","serif";
-	font-weight:normal;
-	font-style:italic;}
-h3
-	{mso-style-link:"Heading 3 Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";
-	font-weight:normal;
-	font-style:italic;}
-h4
-	{mso-style-link:"Heading 4 Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	font-size:16.0pt;
-	font-family:"Times New Roman","serif";
-	font-weight:normal;}
-h5
-	{mso-style-link:"Heading 5 Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	font-size:18.0pt;
-	font-family:"Times New Roman","serif";
-	font-weight:normal;}
-h6
-	{mso-style-link:"Heading 6 Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	background:#FF99CC;
-	font-size:16.0pt;
-	font-family:"Arial","sans-serif";
-	color:black;
-	font-weight:normal;}
-p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
-	{mso-style-link:"Body Text Char";
-	margin-top:0cm;
-	margin-right:-10.4pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	background:#FCC9C3;
-	font-size:18.0pt;
-	font-family:"Arial","sans-serif";}
-p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
-	{mso-style-link:"Body Text 2 Char";
-	margin-top:0cm;
-	margin-right:-19.4pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	background:#FCC9C3;
-	font-size:18.0pt;
-	font-family:"Arial","sans-serif";}
-p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
-	{mso-style-link:"Body Text Indent 2 Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:-9.0pt;
-	margin-bottom:.0001pt;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:36.0pt;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
-span.Heading1Char
-	{mso-style-name:"Heading 1 Char";
-	mso-style-link:"Heading 1";
-	font-family:"Cambria","serif";
-	color:#365F91;
-	font-weight:bold;}
-span.Heading2Char
-	{mso-style-name:"Heading 2 Char";
-	mso-style-link:"Heading 2";
-	font-family:"Cambria","serif";
-	color:#4F81BD;
-	font-weight:bold;}
-span.Heading3Char
-	{mso-style-name:"Heading 3 Char";
-	mso-style-link:"Heading 3";
-	font-family:"Cambria","serif";
-	color:#4F81BD;
-	font-weight:bold;}
-span.Heading4Char
-	{mso-style-name:"Heading 4 Char";
-	mso-style-link:"Heading 4";
-	font-family:"Cambria","serif";
-	color:#4F81BD;
-	font-weight:bold;
-	font-style:italic;}
-span.Heading5Char
-	{mso-style-name:"Heading 5 Char";
-	mso-style-link:"Heading 5";
-	font-family:"Cambria","serif";
-	color:#243F60;}
-span.Heading6Char
-	{mso-style-name:"Heading 6 Char";
-	mso-style-link:"Heading 6";
-	font-family:"Cambria","serif";
-	color:#243F60;
-	font-style:italic;}
-span.BodyTextChar
-	{mso-style-name:"Body Text Char";
-	mso-style-link:"Body Text";}
-span.BodyText2Char
-	{mso-style-name:"Body Text 2 Char";
-	mso-style-link:"Body Text 2";}
-span.BodyTextIndent2Char
-	{mso-style-name:"Body Text Indent 2 Char";
-	mso-style-link:"Body Text Indent 2";}
-p.msolistparagraphcxspfirst, li.msolistparagraphcxspfirst, div.msolistparagraphcxspfirst
-	{mso-style-name:msolistparagraphcxspfirst;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
-p.msolistparagraphcxspmiddle, li.msolistparagraphcxspmiddle, div.msolistparagraphcxspmiddle
-	{mso-style-name:msolistparagraphcxspmiddle;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
-p.msolistparagraphcxsplast, li.msolistparagraphcxsplast, div.msolistparagraphcxsplast
-	{mso-style-name:msolistparagraphcxsplast;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:36.0pt;
-	line-height:115%;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";}
-p.verse, li.verse, div.verse
-	{mso-style-name:verse;
-	margin-right:0cm;
-	margin-left:0cm;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";}
-p.Lyrics, li.Lyrics, div.Lyrics
-	{mso-style-name:Lyrics;
-	margin:0cm;
-	margin-bottom:.0001pt;
-	text-autospace:none;
-	font-size:14.0pt;
-	font-family:"Arial","sans-serif";
-	color:blue;
-	font-weight:bold;}
-p.msochpdefault, li.msochpdefault, div.msochpdefault
-	{mso-style-name:msochpdefault;
-	margin-right:0cm;
-	margin-left:0cm;
-	font-size:10.0pt;
-	font-family:"Times New Roman","serif";}
-span.lineline-s
-	{mso-style-name:"line line-s";}
-@page Section1
-	{size:595.3pt 841.9pt;
-	margin:1.0cm 1.0cm 1.0cm 1.0cm;}
-div.Section1
-	{page:Section1;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
--->
-</style>
-
-</head>
-
-<body lang=EN-GB>
-
-<div class=Section1>
-
-<h2><b><span style='font-size:18.0pt;font-family:"Arial","sans-serif";
-font-style:normal'>Call Me</span></b><span style='font-family:"Arial","sans-serif"'>
-(Petula Clark)</span><span style='font-family:"Arial","sans-serif";font-style:
-normal'> - </span><b><span style='font-size:12.0pt;font-family:"Arial","sans-serif";
-font-style:normal'>STING 21606</span></b><span style='font-family:"Arial","sans-serif";
-font-style:normal'>&nbsp;&nbsp; (Paul Bristow)</span></h2>
-
-<h2><span style='font-family:"Arial","sans-serif";font-style:normal'>&nbsp;</span></h2>
-
-<h2><b><span style='font-family:"Arial","sans-serif";font-style:normal'>&nbsp;(</span></b><b><span
-style='font-family:"Arial","sans-serif"'>Opener</span></b><b><span
-style='font-family:"Arial","sans-serif";font-style:normal'>):</span></b><span
-style='font-family:"Arial","sans-serif";font-style:normal'> You <span
-style='text-transform:uppercase'>CIRCLE </span>LEFT now:</span></h2>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>If you're feeling sad and lonely </span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>There's a service I can render</span></p>
-
-<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;line-height:
-normal'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>LEFT ALLEMANDE
-you DO SA DO you see</span></p>
-
-<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;line-height:
-normal'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>The MEN
-STAR LEFT - </span><span lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>so warm and tender - call me</span></p>
-
-<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>TURN
-your PARTNER by the RIGHT </span><span lang=EN-US style='font-size:16.0pt;
-font-family:"Arial","sans-serif";background:#FCC9C3'>and just - call me</span></p>
-
-<p class=MsoNormal style='line-height:15.9pt'><span style='font-size:10.0pt;
-font-family:"Arial","sans-serif"'>LEFT ALLEMANDE, PROMENADE her </span><span
-lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";background:
-#FCC9C3'>and - call me</span><span lang=EN-US style='font-size:18.0pt;
-font-family:"Arial","sans-serif";background:#FCC9C3'><br>
-</span><span lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>Tell me - and I'll be around</span></p>
-
-<h4><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></b></h4>
-
-<h4><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></b></h4>
-
-<h4><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;(<i>Figure</i>):</span></b><span
-style='font-size:10.0pt;font-family:"Arial","sans-serif"'> The HEADS STAR THRU and
-DOUBLE PASS THRU</span></h4>
-
-<h4><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Put CENTRES
-IN - CAST OFF THREE QUARTERS - you know</span></h4>
-
-<h4><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>You PASS
-THRU - and TAG THE LINE you do - FACE IN - FORWARD UP and BACK - you go</span></h4>
-
-<h4><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>STAR THRU -
-the CENTRES SQUARE THRU THREE - out to your Corner - SWING and PROMENADE</span></h4>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>You gotta trust me - that's how it must be</span></p>
-
-<p class=MsoListParagraph style='margin-top:0cm;margin-right:0cm;margin-bottom:
-0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
-normal'><span lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif"'>-<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";background:
-#FCC9C3'>There's so much that I can do…</span></p>
-
-<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></b></p>
-
-<h4><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;(<i>Figure</i>):</span></b><span
-style='font-size:10.0pt;font-family:"Arial","sans-serif"'> The HEADS STAR THRU and
-DOUBLE PASS THRU</span></h4>
-
-<h4><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>Put CENTRES
-IN - CAST OFF THREE QUARTERS - you know</span></h4>
-
-<h4><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>You PASS
-THRU - and TAG THE LINE you do - FACE IN - FORWARD UP and BACK - you go</span></h4>
-
-<h4><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>STAR THRU -
-the CENTRES SQUARE THRU THREE - out to your Corner - SWING and PROMENADE</span></h4>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>Now don't forget me, 'cause if you let me</span></p>
-
-<p class=MsoListParagraph style='margin-top:0cm;margin-right:0cm;margin-bottom:
-0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:
-normal'><span style='font-size:16.0pt;font-family:"Arial","sans-serif"'>-<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";background:
-#FCC9C3'>I will always stay by you…</span></p>
-
-<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></p>
-
-<h2><b><span style='font-family:"Arial","sans-serif";font-style:normal'>&nbsp;(</span></b><b><span
-style='font-family:"Arial","sans-serif"'>Middle Break</span></b><b><span
-style='font-family:"Arial","sans-serif";font-style:normal'>):</span></b><span
-style='font-family:"Arial","sans-serif";font-style:normal'> <span
-style='text-transform:uppercase'>CIRCLE LEFT:</span></span></h2>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>When its seems your friends desert you</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>There's somebody thinking of you</span></p>
-
-<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;line-height:
-normal'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>LEFT ALLEMANDE
-you DO SA DO too</span></p>
-
-<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;line-height:
-normal'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>The MEN
-STAR LEFT - </span><span lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>because I love you - call me</span></p>
-
-<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>TURN
-your PARTNER by the RIGHT </span><span lang=EN-US style='font-size:16.0pt;
-font-family:"Arial","sans-serif";background:#FCC9C3'>and just - call me</span></p>
-
-<p class=MsoNormal style='line-height:15.9pt'><span style='font-size:10.0pt;
-font-family:"Arial","sans-serif"'>LEFT ALLEMANDE, PROMENADE her </span><span
-lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";background:
-#FCC9C3'>and - call me</span><span lang=EN-US style='font-size:18.0pt;
-font-family:"Arial","sans-serif";background:#FCC9C3'><br>
-</span><span lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>Tell me - and I'll be around</span></p>
-
-<p class=MsoNormal><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></b></p>
-
-<p class=MsoNormal><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></b></p>
-
-<p class=MsoNormal><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;(<i>Closer</i>):</span></b><span
-style='font-size:10.0pt;font-family:"Arial","sans-serif"'> <span
-style='text-transform:uppercase'>CIRCLE LEFT:</span></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>If you call, I'll be right with you</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>You and I should be together</span></p>
-
-<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;line-height:
-normal'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>LEFT ALLEMANDE
-you DO SA DO too</span></p>
-
-<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;line-height:
-normal'><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>The MEN
-STAR LEFT - </span><span lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>at your side forever - call me</span></p>
-
-<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>TURN
-your PARTNER by the RIGHT </span><span lang=EN-US style='font-size:16.0pt;
-font-family:"Arial","sans-serif";background:#FCC9C3'>and just - call me</span></p>
-
-<p class=MsoNormal style='line-height:15.9pt'><span style='font-size:10.0pt;
-font-family:"Arial","sans-serif"'>LEFT ALLEMANDE, PROMENADE her </span><span
-lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";background:
-#FCC9C3'>and - call me</span><span lang=EN-US style='font-size:18.0pt;
-font-family:"Arial","sans-serif";background:#FCC9C3'><br>
-</span><span lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";
-background:#FCC9C3'>Tell me - and I'll be around</span></p>
-
-<p class=MsoNormal><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></b></p>
-
-<p class=MsoNormal><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;</span></b></p>
-
-<p class=MsoNormal><b><span style='font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;(<i>Tag</i>):</span></b><span
-style='font-size:10.0pt;font-family:"Arial","sans-serif"'> SWING your Girl - </span><span
-lang=EN-US style='font-size:16.0pt;font-family:"Arial","sans-serif";background:
-#FCC9C3'>Call me, You gotta call me - now</span></p>
-
-<p class=MsoNormal style='margin-right:-28.45pt'><span style='font-size:10.0pt;
-font-family:"Arial","sans-serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-right:-28.45pt'><span style='font-size:10.0pt;
-font-family:"Arial","sans-serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-right:-28.45pt'><b><i><span style='font-size:
-10.0pt;font-family:"Arial","sans-serif"'>ORIGINAL LYRICS:</span></i></b></p>
-
-<p class=verse style='margin:0cm;margin-bottom:.0001pt'><b>&nbsp;</b></p>
-
-<p class=MsoNormal>If you're feeling sad and lonely</p>
-
-<p class=MsoNormal>&nbsp;- there's a service I can render.<br>
-Tell the one who loves you only</p>
-
-<p class=MsoNormal>&nbsp;- I can be so warm and tender.</p>
-
-<p class=MsoNormal><br>
-Call me, don't be afraid, you can call me</p>
-
-<p class=MsoNormal>Maybe it's late but just call me.<br>
-Tell me and I'll be around.</p>
-
-<p class=MsoNormal><br>
-When its seems your friends desert you</p>
-
-<p class=MsoNormal>&nbsp;- there's somebody thinking of you.<br>
-I'm the one who'll never hurt you</p>
-
-<p class=MsoNormal>&nbsp;- maybe that's because I love you.</p>
-
-<p class=MsoNormal><br>
-Now don't forget me, 'cause if you let me</p>
-
-<p class=MsoNormal>&nbsp;- I will always stay by you.<br>
-You gotta trust me, that's how it must be</p>
-
-<p class=MsoNormal>&nbsp;- there's so much that I can do.</p>
-
-<p class=MsoNormal><br>
-If you call, I'll be right with you</p>
-
-<p class=MsoNormal>&nbsp;- you and I should be together.<br>
-Take this love I long to give you</p>
-
-<p class=MsoNormal>&nbsp;- I'll be at your side forever, call me, call me.</p>
-
-<p class=MsoNormal><span style='color:blue'>&nbsp;</span></p>
-
-<p class=MsoNormal>You gotta call me - Call me now</p>
-
-</div>
-
-</body>
-
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+  <title>
+   Music -- CallMe-Sting-21606
+  </title>
+  <base href="https://www.ceder.net/" target="_top">
+  <script src="https://www.ceder.net/js/ceder.js?v=0">
+  </script>
+  <link href="https://www.ceder.net/favicon/recorddb.ico" rel="icon" type="image/x-icon">
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="http://www.unspam.com/noemailcollection" name="no-email-collection">
+  <meta content="none" name="robots">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <style>
+   @media (max-width:400px) {.vbig {display:none;}}@media (min-width:400px) {.vsmall {display:none;}}@media (max-width:680px) {.vtbig {display:none;}}@media (min-width:680px) {.vtsmall {display:none;}}
+  </style>
+  <style>
+   .footnote {font-size:8pt;}
+.title {font-size:18pt; font-weight:bold;}
+.label {font-size:10pt; color:purple;}
+.artist {font-size:10pt; color:green;}
+.hdr {font-size:12pt; color:brown; font-weight:bold; margin-left:25px;}
+.text {font-size:12pt; line-height:140%;}
+.lyrics {font-size:14pt; background-color:#FCC9C3;}
+.call {font-size:14pt; font-weight: bold;}
+.blue {color:blue;}
+font {font-family:Tahoma,Arial,Helvetica,sans-serif;}
+body, p, font {font-family:Arial,Helvetica,Verdana,sans-serif; font-size:10pt;}
+dd {margin-left:50px;}
+.t010 {border:0px none; border-spacing:0px;}
+table.t010 td, th {padding:1px; border:0px solid red;}
+table.t010 tr {border:0px solid red;}
+  </style>
+ </head>
+ <body style="color:#000000; background-color:#FFFFFF;">
+  <table class="t010">
+   <tr>
+    <td>
+     <div class="title">
+      Call Me
+     </div>
+     <div>
+      Petula Clark; Chris Montez 1963
+     </div>
+    </td>
+    <td>
+     &nbsp;&nbsp;
+     <span class="label">
+      (Sting 21606)
+     </span>
+     &nbsp;&nbsp;
+     <span class="artist">
+      <span class="nobr">
+       Paul Bristow
+      </span>
+     </span>
+    </td>
+   </tr>
+  </table>
+  <hr>
+  <dl>
+   <dt>
+    <span class="hdr">
+     OPENER&nbsp;&nbsp;&nbsp;
+     <span style="color:black; font-size:10pt; font-weight:normal;">
+      B - SSD Week 1
+     </span>
+    </span>
+   </dt>
+   <dd>
+    <br>
+    <span class="text">
+     You
+     <span class="call">
+      circle left
+     </span>
+     now
+     <br>
+     <span class="lyrics">
+      If you're feeling sad and lonely
+      <br>
+      There's a service I can render
+     </span>
+     <br>
+     <span class="call">
+      Left allemande
+     </span>
+     , you
+     <span class="call">
+      dosado
+     </span>
+     ,
+     <span class="lyrics">
+      you see
+     </span>
+     <br>
+     The
+     <span class="call">
+      men star left
+     </span>
+     ,
+     <span class="lyrics">
+      so warm and tender - call me
+     </span>
+     <br>
+     <span class="call">
+      Turn your partner by the right
+     </span>
+     ,
+     <span class="lyrics">
+      and just call me
+     </span>
+     <br>
+     <span class="call">
+      Left allemande
+     </span>
+     ,
+     <span class="call">
+      promenade
+     </span>
+     her and
+     <span class="lyrics">
+      call me
+     </span>
+     <br>
+     <span class="lyrics">
+      Tell me and I'll be around
+     </span>
+    </span>
+    <br>
+    <br>
+   </dd>
+   <dt>
+    <span class="hdr">
+     FIGURE&nbsp;&nbsp;&nbsp;
+     <span style="color:black; font-size:10pt; font-weight:normal;">
+      Mainstream, corner progression
+     </span>
+    </span>
+   </dt>
+   <dd>
+    <br>
+    <span class="text">
+     The
+     <span class="call">
+      heads (sides)
+     </span>
+     <span class="call">
+      star thru
+     </span>
+     and
+     <span class="call">
+      double pass thru
+     </span>
+     <br>
+     Put
+     <span class="call">
+      centers in, cast off 3/4
+     </span>
+     you know
+     <br>
+     You
+     <span class="call">
+      pass thru
+     </span>
+     and
+     <span class="call">
+      tag the line
+     </span>
+     you do
+     <br>
+     <span class="call">
+      Face in
+     </span>
+     ,
+     <span class="call">
+      forward up and back
+     </span>
+     you go
+     <br>
+     <span class="call">
+      Star thru
+     </span>
+     , the
+     <span class="call">
+      centers
+     </span>
+     <span class="call">
+      square thru 3
+     </span>
+     <br>
+     Out to your corner,
+     <span class="call">
+      swing
+     </span>
+     and
+     <span class="call">
+      promenade
+     </span>
+     <br>
+     <span class="lyrics">
+      *You gotta trust me, that's how it must be
+      <br>
+      There's so much that I can do
+     </span>
+    </span>
+    <br>
+    <br>
+   </dd>
+   <dt>
+    <span class="hdr">
+     ALTERNATE LYRICS
+    </span>
+   </dt>
+   <dd>
+    <br>
+    <span class="text">
+     <span class="lyrics">
+      *Now don't forget me, 'cause if you let me
+      <br>
+      I will always stay by you
+     </span>
+    </span>
+    <br>
+    <br>
+   </dd>
+   <dt>
+    <span class="hdr">
+     MIDDLE BREAK&nbsp;&nbsp;&nbsp;
+     <span style="color:black; font-size:10pt; font-weight:normal;">
+      B - SSD Week 1
+     </span>
+    </span>
+   </dt>
+   <dd>
+    <br>
+    <span class="text">
+     <span class="call">
+      Circle left
+     </span>
+     <br>
+     <span class="lyrics">
+      When it seems your friends desert you
+      <br>
+      There's somebody thinking of you
+     </span>
+     <br>
+     <span class="call">
+      Left allemande
+     </span>
+     , you
+     <span class="call">
+      dosado
+     </span>
+     , too
+     <br>
+     The
+     <span class="call">
+      men star left
+     </span>
+     <span class="lyrics">
+      because I love you - call me
+     </span>
+     <br>
+     <span class="call">
+      Turn your partner by the right
+     </span>
+     <span class="lyrics">
+      and just call me
+     </span>
+     <br>
+     <span class="call">
+      Left allemande
+     </span>
+     ,
+     <span class="call">
+      promenade
+     </span>
+     her and
+     <span class="lyrics">
+      call me
+     </span>
+     <br>
+     <span class="lyrics">
+      Tell me and I'll be around
+     </span>
+    </span>
+    <br>
+    <br>
+   </dd>
+   <dt>
+    <span class="hdr">
+     CLOSER&nbsp;&nbsp;&nbsp;
+     <span style="color:black; font-size:10pt; font-weight:normal;">
+      B - SSD Week 1
+     </span>
+    </span>
+   </dt>
+   <dd>
+    <br>
+    <span class="text">
+     <span class="call">
+      Circle left
+     </span>
+     <br>
+     <span class="lyrics">
+      If you call, I'll be right with you
+      <br>
+      You and I should be together
+     </span>
+     <br>
+     <span class="call">
+      Left allemande
+     </span>
+     , you
+     <span class="call">
+      dosado
+     </span>
+     , too
+     <br>
+     The
+     <span class="call">
+      men star left
+     </span>
+     <span class="lyrics">
+      at your side forever, call me
+     </span>
+     <br>
+     <span class="call">
+      Turn your partner by the right
+     </span>
+     <span class="lyrics">
+      and just call me
+     </span>
+     <br>
+     <span class="call">
+      Left allemande
+     </span>
+     ,
+     <span class="call">
+      promenade
+     </span>
+     her and
+     <span class="lyrics">
+      call me
+     </span>
+     <br>
+     <span class="lyrics">
+      Tell me and I'll be around
+     </span>
+    </span>
+    <br>
+    <br>
+   </dd>
+   <dt>
+    <span class="hdr">
+     TAG
+    </span>
+   </dt>
+   <dd>
+    <br>
+    <span class="text">
+     <span class="call">
+      Swing
+     </span>
+     your girl
+     <br>
+     <span class="lyrics">
+      Call me
+      <br>
+      You gotta call me - now
+     </span>
+    </span>
+   </dd>
+  </dl>
+  <hr>
+  <span class="footnote">
+   <span class="blue">
+    Music
+   </span>
+   --
+   <a href="https://www.ceder.net/recorddb/viewsingle.php?RecordId=17329">
+    https://www.ceder.net/recorddb/viewsingle.php?RecordId=17329
+   </a>
+  </span>
+  <br>
+  <span class="footnote">
+   <span class="blue">
+    Lyrics
+   </span>
+   --
+   <a href="https://www.ceder.net/recorddb/lyrics.php?LyricsId=4154">
+    https://www.ceder.net/recorddb/lyrics.php?LyricsId=4154
+   </a>
+  </span>
+  <br>
+  <span class="footnote">
+   <span class="blue">
+    This file
+   </span>
+   --
+   <a href="https://www.ceder.net/recorddb/cuesheet.php?RecordId=17329">
+    https://www.ceder.net/recorddb/cuesheet.php?RecordId=17329
+   </a>
+  </span>
+ </body>
 </html>
