@@ -1,288 +1,312 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
  <head>
   <title>
    Sweet Nothins-SSR-367
   </title>
   <style>
-   .footnote {font-size:8pt; font-family:Courier, System, monospace;}
-.title {font-size:18pt; font-weight:bold;}
-.label {font-size:10pt; color:purple;}
-.artist {font-size:10pt; color:green;}
-.hdr {font-size:12pt; color:brown; font-weight:bold;}
-.text {font-size:12pt; line-height:140%;}
-.lyrics {font-size:14pt; background-color:#FCC9C3;}
-.call {font-size:14pt; font-weight: bold;}
-.blue {color:blue;}
-font {font-family:Tahoma,Arial,Helvetica,sans-serif;}
-body, p, font {font-family:Arial,Helvetica,Verdana,sans-serif; font-size:10pt;}
-dd {margin-left:50px;}
-.nopgbr{page-break-inside:avoid;}
-.indent30{position:relative;margin-top:0px;margin-bottom:0px;}
-@media (min-width: 400px) {.text {margin-left:30px;} .indent30 {margin-right:30px;left:30px;}}
-@media (max-width: 400px) {.text {margin-left:16px;} .indent30 {margin-right:8px;left:8px;}}
-.t010 {border:0px none; border-spacing:0px;}
-table.t010 td, th {padding:1px; border:0px solid red;}
-table.t010 tr {border:0px solid red;}
-.two_columns {
- -webkit-columns: 2 300px;
-    -moz-columns: 2 300px;
-         columns: 2 300px;
- -webkit-column-gap: 4em;
-    -moz-column-gap: 4em;
-         column-gap: 4em;
-}
+   .title {
+    font-size: 18pt;
+    font-weight: bold;
+  }
+  .sdLabel {
+    font-size: 10pt;
+    color: darkred;
+    padding-left: 10px;
+  }
+  .sdArtist {
+    font-size: 10pt;
+    color: mediumblue;
+  }
+  .header {
+    font-size: 16pt;
+    color: royalblue;
+    background-color: whitesmoke;
+    font-weight: bold;
+  }
+  .text {
+    font-size: 12pt;
+    line-height: 140%;
+  }
+  .songLyrics {
+    font-size: 14pt;
+    background-color: yellow;
+  }
+  .sdCall {
+    font-size: 14pt;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .blue {
+    color: dodgerblue;
+  }
+  .noBreak {
+    break-inside: avoid;
+  }
+  .paragraphIndent {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+  }
+  .boxBorder {
+    border: 0px none;
+    border-spacing: 0px;
+  }
+  font {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+  }
+  body,
+  p,
+  font {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 10pt;
+  }
+  dd {
+    margin-left: 50px;
+  }
+  table.boxBorder td,
+  th {
+    padding: 1px;
+    border: 1px solid ghostwhite;
+  }
+  table.boxBorder tr {
+    border: 1px solid ghostwhite;
+  }
   </style>
  </head>
  <body style="color:#000000; background-color:#FFFFFF;">
   <div style="border-spacing:0px; display:table; vertical-align:top; width:100%;">
    <div style="display:table-cell; vertical-align:top;">
-    <table class="t010">
-     <tr>
-      <td>
-       <div class="title">
-        Sweet Nothins
-       </div>
-      </td>
-      <td>
-       &nbsp;&nbsp;
-       <span class="label">
-        (Silver Sounds 367)
-       </span>
-       &nbsp;&nbsp;
-       <span class="artist">
-        <span class="nobr">
-         Jack O'Leary
+    <table class="boxBorder">
+     <tbody>
+      <tr>
+       <td>
+        <div class="title">
+         Sweet Nothins
+        </div>
+       </td>
+       <td>
+        <span class="sdLabel">
+         (Silver Sounds 367)
         </span>
-        ,
-        <span class="nobr">
+        <span class="sdArtist">
+         Jack O'Leary
+         ,
          Deb Malsom
         </span>
-       </span>
-      </td>
-     </tr>
+       </td>
+      </tr>
+     </tbody>
     </table>
    </div>
    <div style="display:table-cell; width:16px;">
-    &nbsp;
    </div>
   </div>
-  <hr>
-  <div class="nopgbr" style="padding-top:16px;">
-   <span class="hdr">
-    OPENER&nbsp;&nbsp;&nbsp;
-    <span style="color:black; font-size:10pt; font-weight:normal;">
-     Basic - SSD Week 1
-    </span>
+  <hr/>
+  <div class="noBreak" style="padding-top:16px;">
+   <span class="header">
+    OPENER
    </span>
-   <br>
-   <div class="indent30">
-    <br>
-    <span class="call">
+   <br/>
+   <div class="paragraphIndent">
+    <br/>
+    <span class="sdCall">
      Circle left
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      My baby whispers in my ear, ooh, sweet nothin's
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Men star right
     </span>
     , roll it
-    <span alt="5/4" class="call">
+    <span alt="5/4" class="sdCall">
      one time
     </span>
     tonight
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Left allemande
     </span>
     ,
-    <span class="call">
+    <span class="sdCall">
      weave the ring
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      Things he (she) wouldn't tell nobody else
-     <br>
+     <br/>
      It's a secret baby, I keep 'em to myself
-     <br>
+     <br/>
      Sweet nothin's, ooh, sweet nothin's
     </span>
-    <br>
-    <br>
+    <br/>
+    <br/>
    </div>
   </div>
-  <div class="nopgbr" style="padding-top:16px;">
-   <span class="hdr">
-    FIGURE&nbsp;&nbsp;&nbsp;
-    <span style="color:black; font-size:10pt; font-weight:normal;">
-     Mainstream - SSD Week 11, corner progression
-    </span>
+  <div class="noBreak" style="padding-top:16px;">
+   <span class="header">
+    FIGURE
    </span>
-   <br>
-   <div class="indent30">
-    <br>
-    <span class="call">
+   <br/>
+   <div class="paragraphIndent">
+    <br/>
+    <span class="sdCall">
      Heads (sides)
     </span>
-    <span class="call">
+    <span class="sdCall">
      promenade halfway
     </span>
     around
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Walk in and
     </span>
-    <span class="call">
+    <span class="sdCall">
      pass the ocean
     </span>
     here,
-    <span class="call">
+    <span class="sdCall">
      extend
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Swing thru
     </span>
     ,
-    <span class="call">
+    <span class="sdCall">
      swing thru
     </span>
     again
-    <br>
+    <br/>
     Then the
-    <span class="call">
+    <span class="sdCall">
      girls run
     </span>
     right
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Tag the line
     </span>
     , all the way thru,
-    <span class="call">
+    <span class="sdCall">
      boys turn back
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Star thru
     </span>
     ,
-    <span class="call">
+    <span class="sdCall">
      promenade
     </span>
     the track
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      Sweet nothin's, ooh, sweet nothin's
     </span>
-    <br>
-    <br>
+    <br/>
+    <br/>
    </div>
   </div>
-  <div class="nopgbr" style="padding-top:16px;">
-   <span class="hdr">
-    MIDDLE BREAK&nbsp;&nbsp;&nbsp;
-    <span style="color:black; font-size:10pt; font-weight:normal;">
-     Mainstream
-    </span>
+  <div class="noBreak" style="padding-top:16px;">
+   <span class="header">
+    MIDDLE BREAK
    </span>
-   <br>
-   <div class="indent30">
-    <br>
-    <span class="call">
+   <br/>
+   <div class="paragraphIndent">
+    <br/>
+    <span class="sdCall">
      Sides
     </span>
-    <span class="call">
+    <span class="sdCall">
      face grand square
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      We walk along hand in hand, sweet nothin's
-     <br>
+     <br/>
      Yeah, we both understand, sweet nothin's
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Left allemande
     </span>
     and
-    <span class="call">
+    <span class="sdCall">
      weave the ring
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      Sittin' in the classroom trying to read my book
-     <br>
+     <br/>
      My baby gives me that special look
-     <br>
+     <br/>
      Sweet nothin's, ooh sweet nothin's
     </span>
-    <br>
-    <br>
+    <br/>
+    <br/>
    </div>
   </div>
-  <div class="nopgbr" style="padding-top:16px;">
-   <span class="hdr">
-    CLOSER&nbsp;&nbsp;&nbsp;
-    <span style="color:black; font-size:10pt; font-weight:normal;">
-     Mainstream
-    </span>
+  <div class="noBreak" style="padding-top:16px;">
+   <span class="header">
+    CLOSER
    </span>
-   <br>
-   <div class="indent30">
-    <br>
-    <span class="call">
+   <br/>
+   <div class="paragraphIndent">
+    <br/>
+    <span class="sdCall">
      Sides
     </span>
-    <span class="call">
+    <span class="sdCall">
      face grand square
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      My baby whispers in my ear, sweet nothin's
-     <br>
+     <br/>
      He (she) knows the things I like to hear
-     <br>
+     <br/>
      Sweet nothin's
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Left allemande
     </span>
     ,
-    <span class="call">
+    <span class="sdCall">
      weave the ring
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      Things he (she) wouldn't tell nobody else
-     <br>
+     <br/>
      It's a secret baby, I keep 'em to myself
-     <br>
+     <br/>
      Sweet nothin's, ooh, sweet nothin's
-     <br>
+     <br/>
      Sweet nothin's, ooh, sweet nothin's
     </span>
-    <br>
-    <br>
+    <br/>
+    <br/>
    </div>
   </div>
-  <div class="nopgbr" style="padding-top:16px;">
-   <span class="hdr">
+  <div class="noBreak" style="padding-top:16px;">
+   <span class="header">
     TAG
    </span>
-   <br>
-   <div class="indent30">
-    <br>
+   <br/>
+   <div class="paragraphIndent">
+    <br/>
     (Spoken)
-    <span class="lyrics">
+    <span class="songLyrics">
      Sweet nothin's
     </span>
    </div>
   </div>
-  <hr>
+  <hr/>
  </body>
 </html>

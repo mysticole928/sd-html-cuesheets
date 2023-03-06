@@ -1,523 +1,543 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
  <head>
   <title>
    Sinatra Medley-SR-502
   </title>
   <style>
-   .footnote {font-size:8pt; font-family:Courier, System, monospace;}
-.title {font-size:18pt; font-weight:bold;}
-.label {font-size:10pt; color:purple;}
-.artist {font-size:10pt; color:green;}
-.hdr {font-size:12pt; color:brown; font-weight:bold;}
-.text {font-size:12pt; line-height:140%;}
-.lyrics {font-size:14pt; background-color:#FCC9C3;}
-.call {font-size:14pt; font-weight: bold;}
-.blue {color:blue;}
-font {font-family:Tahoma,Arial,Helvetica,sans-serif;}
-body, p, font {font-family:Arial,Helvetica,Verdana,sans-serif; font-size:10pt;}
-dd {margin-left:50px;}
-.nopgbr{page-break-inside:avoid;}
-.indent30{position:relative;margin-top:0px;margin-bottom:0px;}
-@media (min-width: 400px) {.text {margin-left:30px;} .indent30 {margin-right:30px;left:30px;}}
-@media (max-width: 400px) {.text {margin-left:16px;} .indent30 {margin-right:8px;left:8px;}}
-.t010 {border:0px none; border-spacing:0px;}
-table.t010 td, th {padding:1px; border:0px solid red;}
-table.t010 tr {border:0px solid red;}
-.two_columns {
- -webkit-columns: 2 300px;
-    -moz-columns: 2 300px;
-         columns: 2 300px;
- -webkit-column-gap: 4em;
-    -moz-column-gap: 4em;
-         column-gap: 4em;
-}
+   .title {
+    font-size: 18pt;
+    font-weight: bold;
+  }
+  .sdLabel {
+    font-size: 10pt;
+    color: darkred;
+    padding-left: 10px;
+  }
+  .sdArtist {
+    font-size: 10pt;
+    color: mediumblue;
+  }
+  .header {
+    font-size: 16pt;
+    color: royalblue;
+    background-color: whitesmoke;
+    font-weight: bold;
+  }
+  .text {
+    font-size: 12pt;
+    line-height: 140%;
+  }
+  .songLyrics {
+    font-size: 14pt;
+    background-color: yellow;
+  }
+  .sdCall {
+    font-size: 14pt;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .blue {
+    color: dodgerblue;
+  }
+  .noBreak {
+    break-inside: avoid;
+  }
+  .paragraphIndent {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+  }
+  .boxBorder {
+    border: 0px none;
+    border-spacing: 0px;
+  }
+  font {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+  }
+  body,
+  p,
+  font {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 10pt;
+  }
+  dd {
+    margin-left: 50px;
+  }
+  table.boxBorder td,
+  th {
+    padding: 1px;
+    border: 1px solid ghostwhite;
+  }
+  table.boxBorder tr {
+    border: 1px solid ghostwhite;
+  }
   </style>
  </head>
  <body style="color:#000000; background-color:#FFFFFF;">
   <div style="border-spacing:0px; display:table; vertical-align:top; width:100%;">
    <div style="display:table-cell; vertical-align:top;">
-    <table class="t010">
-     <tr>
-      <td>
-       <div class="title">
-        Sinatra Medley
-       </div>
-      </td>
-      <td>
-       &nbsp;&nbsp;
-       <span class="label">
-        (Stampede 502)
-       </span>
-       &nbsp;&nbsp;
-       <span class="artist">
-        <span class="nobr">
+    <table class="boxBorder">
+     <tbody>
+      <tr>
+       <td>
+        <div class="title">
+         Sinatra Medley
+        </div>
+       </td>
+       <td>
+        <span class="sdLabel">
+         (Stampede 502)
+        </span>
+        <span class="sdArtist">
          Jim Wass
         </span>
-       </span>
-      </td>
-     </tr>
+       </td>
+      </tr>
+     </tbody>
     </table>
    </div>
    <div style="display:table-cell; width:16px;">
-    &nbsp;
    </div>
   </div>
-  <hr>
-  <div class="nopgbr" style="padding-top:16px;">
-   <span class="hdr">
-    OPENER&nbsp;&nbsp;&nbsp;
-    <span style="color:black; font-size:10pt; font-weight:normal;">
-     Mainstream
-    </span>
+  <hr/>
+  <div class="noBreak" style="padding-top:16px;">
+   <span class="header">
+    OPENER
    </span>
-   <br>
-   <div class="indent30">
-    <br>
-    <span class="call">
+   <br/>
+   <div class="paragraphIndent">
+    <br/>
+    <span class="sdCall">
      Sides face, grand square
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      You make me feel so young
-     <br>
+     <br/>
      You make me feel like spring has sprung
-     <br>
+     <br/>
      Every time I see your grin I'm
-     <br>
+     <br/>
      Such a happy individual
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Four ladies chain
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      The moment that you speak
     </span>
-    <br>
-    <span alt="four ladies chain" class="call">
+    <br/>
+    <span alt="four ladies chain" class="sdCall">
      Chain her back
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      I wanna go play hide and seek
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Promenade
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      You make me feel so young
     </span>
-    <br>
-    <br>
+    <br/>
+    <br/>
    </div>
   </div>
-  <div class="nopgbr" style="padding-top:16px;">
-   <span class="hdr">
-    FIGURE (1)&nbsp;&nbsp;&nbsp;
-    <span style="color:black; font-size:10pt; font-weight:normal;">
-     Mainstream - SSD Week 12, corner progression
-    </span>
+  <div class="noBreak" style="padding-top:16px;">
+   <span class="header">
+    FIGURE (1)
    </span>
-   <br>
-   <div class="indent30">
-    <br>
-    <span class="call">
+   <br/>
+   <div class="paragraphIndent">
+    <br/>
+    <span class="sdCall">
      Heads promenade 1/2
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      Here I go again
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Square thru
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      I hear the trumpets blow again
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Dosado
     </span>
     the corner girl and then
-    <span class="call">
+    <span class="sdCall">
      right &amp; left thru
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Veer left
     </span>
     ,
-    <span class="call">
+    <span class="sdCall">
      couples circulate
     </span>
     ,
-    <span class="call">
+    <span class="sdCall">
      half tag
     </span>
     ,
-    <span class="call">
+    <span class="sdCall">
      scoot back
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Swing
     </span>
     the corner,
-    <span class="call">
+    <span class="sdCall">
      promenade
     </span>
     that track
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      I'm all aglow again, takin' a chance on love
     </span>
-    <br>
-    <br>
+    <br/>
+    <br/>
    </div>
   </div>
-  <div class="nopgbr" style="padding-top:16px;">
-   <span class="hdr">
-    FIGURE (2)&nbsp;&nbsp;&nbsp;
-    <span style="color:black; font-size:10pt; font-weight:normal;">
-    </span>
+  <div class="noBreak" style="padding-top:16px;">
+   <span class="header">
+    FIGURE (2)
    </span>
-   <br>
-   <div class="indent30">
-    <br>
-    <span class="call">
+   <br/>
+   <div class="paragraphIndent">
+    <br/>
+    <span class="sdCall">
      Heads
     </span>
-    <span class="call">
+    <span class="sdCall">
      promenade
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      I thought that the cards were a setup
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Square thru
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      I never thought I could win
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Dosado
     </span>
     that corner
-    <span class="lyrics">
+    <span class="songLyrics">
      don't let up
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Right &amp; left thru
     </span>
     ,
-    <span class="lyrics">
+    <span class="songLyrics">
      and don't give in
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Veer left
     </span>
     ,
-    <span class="call">
+    <span class="sdCall">
      couples circulate
     </span>
     ,
-    <span class="call">
+    <span class="sdCall">
      half tag
     </span>
     ,
-    <span class="call">
+    <span class="sdCall">
      scoot back
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Swing
     </span>
     the corner,
-    <span class="call">
+    <span class="sdCall">
      promenade
     </span>
     that track
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      I'm gonna give my all again
-     <br>
+     <br/>
      Taking a chance on...
     </span>
-    <br>
-    <br>
+    <br/>
+    <br/>
    </div>
   </div>
-  <div class="nopgbr" style="padding-top:16px;">
-   <span class="hdr">
-    MIDDLE BREAK&nbsp;&nbsp;&nbsp;
-    <span style="color:black; font-size:10pt; font-weight:normal;">
-     Mainstream
-    </span>
+  <div class="noBreak" style="padding-top:16px;">
+   <span class="header">
+    MIDDLE BREAK
    </span>
-   <br>
-   <div class="indent30">
-    <br>
-    <span class="call">
+   <br/>
+   <div class="paragraphIndent">
+    <br/>
+    <span class="sdCall">
      Sides face, grand square
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      Fly with me, let's fly, let's fly away
-     <br>
+     <br/>
      You just say the words and we'll beat the birds
-     <br>
+     <br/>
      Down to Acapulco Bay
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Circle left
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      It's perfect for a flying honeymoon
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Allemande left
     </span>
     , come back and
-    <span class="call">
+    <span class="sdCall">
      promenade
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      Come fly with me, we'll fly, we'll fly away
     </span>
-    <br>
-    <br>
+    <br/>
+    <br/>
    </div>
   </div>
-  <div class="nopgbr" style="padding-top:16px;">
-   <span class="hdr">
-    FIGURE (3)&nbsp;&nbsp;&nbsp;
-    <span style="color:black; font-size:10pt; font-weight:normal;">
-    </span>
+  <div class="noBreak" style="padding-top:16px;">
+   <span class="header">
+    FIGURE (3)
    </span>
-   <br>
-   <div class="indent30">
-    <br>
-    <span class="call">
+   <br/>
+   <div class="paragraphIndent">
+    <br/>
+    <span class="sdCall">
      Sides
     </span>
-    <span class="call">
+    <span class="sdCall">
      promenade
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      Fly me to the moon and we'll
     </span>
-    <span class="call">
+    <span class="sdCall">
      square thru
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      Among the stars
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Dosado
     </span>
     the corner girl right there
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Right &amp; left thru
     </span>
-    <span class="lyrics">
+    <span class="songLyrics">
      on Jupiter and Mars
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Veer left
     </span>
     ,
-    <span class="call">
+    <span class="sdCall">
      couples circulate
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Half tag
     </span>
     ,
-    <span class="call">
+    <span class="sdCall">
      scoot back
     </span>
-    <br>
+    <br/>
     The corner
-    <span class="call">
+    <span class="sdCall">
      swing
     </span>
     , you
-    <span class="call">
+    <span class="sdCall">
      promenade
     </span>
     the ring
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      In other words, baby kiss me
     </span>
-    <br>
-    <br>
+    <br/>
+    <br/>
    </div>
   </div>
-  <div class="nopgbr" style="padding-top:16px;">
-   <span class="hdr">
-    FIGURE (4)&nbsp;&nbsp;&nbsp;
-    <span style="color:black; font-size:10pt; font-weight:normal;">
-    </span>
+  <div class="noBreak" style="padding-top:16px;">
+   <span class="header">
+    FIGURE (4)
    </span>
-   <br>
-   <div class="indent30">
-    <br>
-    <span class="call">
+   <br/>
+   <div class="paragraphIndent">
+    <br/>
+    <span class="sdCall">
      Sides
     </span>
-    <span class="call">
+    <span class="sdCall">
      promenade
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      Fill my heart with song and we'll
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Square thru
     </span>
-    <span class="lyrics">
+    <span class="songLyrics">
      forevermore
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Dosado
     </span>
-    <span class="lyrics">
+    <span class="songLyrics">
      you're all that I long for
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Right &amp; left thru
     </span>
-    <span class="lyrics">
+    <span class="songLyrics">
      hey, you're all that I adore
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Veer left
     </span>
     ,
-    <span class="call">
+    <span class="sdCall">
      couples circulate
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Half tag
     </span>
     ,
-    <span class="call">
+    <span class="sdCall">
      scoot back
     </span>
-    <br>
+    <br/>
     You
-    <span class="call">
+    <span class="sdCall">
      swing
     </span>
     the corner girl,
-    <span class="call">
+    <span class="sdCall">
      promenade
     </span>
     her too
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      In other words, I love you
     </span>
-    <br>
-    <br>
+    <br/>
+    <br/>
    </div>
   </div>
-  <div class="nopgbr" style="padding-top:16px;">
-   <span class="hdr">
-    CLOSER&nbsp;&nbsp;&nbsp;
-    <span style="color:black; font-size:10pt; font-weight:normal;">
-     Mainstream
-    </span>
+  <div class="noBreak" style="padding-top:16px;">
+   <span class="header">
+    CLOSER
    </span>
-   <br>
-   <div class="indent30">
-    <br>
-    <span class="call">
+   <br/>
+   <div class="paragraphIndent">
+    <br/>
+    <span class="sdCall">
      Sides
     </span>
-    <span class="call">
+    <span class="sdCall">
      face grand square
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      Dear, when you smiled at me
-     <br>
+     <br/>
      I heard a melody
-     <br>
+     <br/>
      It haunted me from the start
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      4 ladies chain across and back
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      Something inside of me
-     <br>
+     <br/>
      Called it a symphony
     </span>
-    <br>
-    <span class="call">
+    <br/>
+    <span class="sdCall">
      Promenade
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      Zing went the strings of my heart
     </span>
-    <br>
-    <br>
+    <br/>
+    <br/>
    </div>
   </div>
-  <div class="nopgbr" style="padding-top:16px;">
-   <span class="hdr">
+  <div class="noBreak" style="padding-top:16px;">
+   <span class="header">
     TAG
    </span>
-   <br>
-   <div class="indent30">
-    <br>
-    <span class="call">
+   <br/>
+   <div class="paragraphIndent">
+    <br/>
+    <span class="sdCall">
      Allemande left
     </span>
     come back and
-    <span class="call">
+    <span class="sdCall">
      swing
     </span>
-    <br>
-    <span class="lyrics">
+    <br/>
+    <span class="songLyrics">
      Zing went the strings of my heart
-     <br>
+     <br/>
      Ya-da-da-da
     </span>
    </div>
   </div>
-  <hr>
+  <hr/>
  </body>
 </html>
