@@ -10,13 +10,15 @@ You can download this as a zip archive and extract it wherever you'd like.
 
 ### Special Characters in filenames
 
-Most modern operating systems can have special characters in their filenames.  It used to be that only letters and numbers were okay.  In this archive, filenames include single quotes, exclamation marks, and other punctuation.  While this has not been an issue on Windows and Macs, some cloud providers will not allow it.  (For example, Microsoft's Office 365 includes a feature called OneDrive.  This archive, as is, causes OneDrive to have errors.)  Using a Zip archive resolves this.
+Most modern operating systems can have special characters in their filenames.  It used to be that only letters and numbers were okay.  
+
+In this archive, filenames include single quotes, exclamation marks, and other punctuation.  While this has not been an issue on Windows and Macs, some cloud providers will not allow it in their online storage.  (For example, Microsoft's OneDrive. This archive, as is, causes OneDrive to have errors.)  Using a Zip archive resolves this.
 
 ### Using the command line
 
 From the command line interface (CLI), you can use `git` to download the files directly.
 
-Git is *not* automatically installed on computers.  It can be download from the web or using a package manager like Homebrew.
+Git is *not* automatically installed on computers.  It can be download from the web or using a package manager like Homebrew or Winget.
 
 _Note: The folder must be empty to run this command the first time._
 
